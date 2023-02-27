@@ -30,7 +30,7 @@ public class CheckoutServiceImpl implements CheckoutService {
     public PurchaseResponse placeOrder(Purchase purchase) {
 
         Order order = purchase.getOrder();
-        System.out.println("order"+order.toString());
+        System.out.println("order"+order);
 
         String orderTrackingNumber = generateOrderTrackingNumber();
         System.out.println("ordertrackingnumber"+orderTrackingNumber);
